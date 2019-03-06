@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue项目遇到的一些坑 | 大漠游侠</title>
+    <meta name="description" content="人这一生，是忙着生，还是忙着死">
+    <link rel="icon" href="/panda.ico">
+  <script src="/js/L2Dwidget.min.js"></script>
+  <script src="/js/index.min.js"></script>
+    
+    <link rel="preload" href="/assets/css/styles.0af71052.css" as="style"><link rel="preload" href="/assets/js/app.0af71052.js" as="script"><link rel="preload" href="/assets/js/16.a658249d.js" as="script"><link rel="prefetch" href="/assets/css/1.styles.a8958bf5.css"><link rel="prefetch" href="/assets/css/6.styles.fb2aed5e.css"><link rel="prefetch" href="/assets/js/1.a8958bf5.js"><link rel="prefetch" href="/assets/js/10.3605eb1f.js"><link rel="prefetch" href="/assets/js/11.023f4da4.js"><link rel="prefetch" href="/assets/js/12.b9bbd9f0.js"><link rel="prefetch" href="/assets/js/13.cdafca85.js"><link rel="prefetch" href="/assets/js/14.c88d32bd.js"><link rel="prefetch" href="/assets/js/15.a7a58b0d.js"><link rel="prefetch" href="/assets/js/17.876c670b.js"><link rel="prefetch" href="/assets/js/18.95741b36.js"><link rel="prefetch" href="/assets/js/19.d6e444be.js"><link rel="prefetch" href="/assets/js/2.c1d759e5.js"><link rel="prefetch" href="/assets/js/3.329b0bc7.js"><link rel="prefetch" href="/assets/js/4.d73482b4.js"><link rel="prefetch" href="/assets/js/5.978ccc24.js"><link rel="prefetch" href="/assets/js/6.fb2aed5e.js"><link rel="prefetch" href="/assets/js/7.fab73517.js"><link rel="prefetch" href="/assets/js/8.ff8758f6.js"><link rel="prefetch" href="/assets/js/9.da67d17d.js">
+    <link rel="stylesheet" href="/assets/css/1.styles.a8958bf5.css"><link rel="stylesheet" href="/assets/css/6.styles.fb2aed5e.css"><link rel="stylesheet" href="/assets/css/styles.0af71052.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">大漠游侠</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active">前端</a></div><div class="nav-item"><a href="/free/" class="nav-link">随笔</a></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active">前端</a></div><div class="nav-item"><a href="/free/" class="nav-link">随笔</a></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>Vue</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/web/vue/vue生命周期.html" class="sidebar-link">vue生命周期</a></li><li><a href="/web/vue/vue.html" class="active sidebar-link">初识vue</a></li><li><a href="/web/vue/vue-npm-framework.html" class="sidebar-link">vue-cli脚手架模版</a></li><li><a href="/web/vue/vue_pc_template.html" class="sidebar-link">基于vue的pc管理后台架构</a></li><li><a href="/web/vue/vue_app_template.html" class="sidebar-link">基于vue的移动端架构</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>js</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>git</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h5 id="自从开始用vue写项目后，前前后后也确实遇到不少问题，踩过不少坑，主要的一些问题总结一下："><a href="#自从开始用vue写项目后，前前后后也确实遇到不少问题，踩过不少坑，主要的一些问题总结一下：" aria-hidden="true" class="header-anchor">#</a> 自从开始用vue写项目后，前前后后也确实遇到不少问题，踩过不少坑，主要的一些问题总结一下：</h5> <h4 id="_1-如果同时运行多个vue项目，就会造成端口冲突，修改vue项目的端口就可解决"><a href="#_1-如果同时运行多个vue项目，就会造成端口冲突，修改vue项目的端口就可解决" aria-hidden="true" class="header-anchor">#</a> 1.如果同时运行多个vue项目，就会造成端口冲突，修改vue项目的端口就可解决</h4> <h6 id="在项目的根目录下-config文件夹下index-js文件中，修改dev的port值就可以了，默认的是8086，修改成自己想要的端口好就可以了。"><a href="#在项目的根目录下-config文件夹下index-js文件中，修改dev的port值就可以了，默认的是8086，修改成自己想要的端口好就可以了。" aria-hidden="true" class="header-anchor">#</a> 在项目的根目录下 config文件夹下index.js文件中，修改dev的port值就可以了，默认的是8086，修改成自己想要的端口好就可以了。</h6> <h4 id="_2-编译打包的问题"><a href="#_2-编译打包的问题" aria-hidden="true" class="header-anchor">#</a> 2.编译打包的问题</h4> <h6 id="在项目的根目录下-build文件夹下webpack-base-conf-js文件中，module-exports对象下有output对象"><a href="#在项目的根目录下-build文件夹下webpack-base-conf-js文件中，module-exports对象下有output对象" aria-hidden="true" class="header-anchor">#</a> 在项目的根目录下 build文件夹下webpack.base.conf.js文件中，module.exports对象下有output对象</h6> <div class="language-bash extra-class"><pre class="language-bash"><code>
+output: <span class="token punctuation">{</span>
+    path: config.build.assetsRoot,
+    filename: <span class="token string">'[name].js'</span>,
+    publicPath:
+        process.env.NODE_ENV <span class="token operator">==</span><span class="token operator">=</span> <span class="token string">'production'</span>
+         ? config.build.assetsPublicPath
+         <span class="token keyword">:</span> config.dev.assetsPublicPath
+
+  <span class="token punctuation">}</span>
+
+</code></pre></div><p>改为：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>
+      output: <span class="token punctuation">{</span>
+          path: config.build.assetsRoot,
+          filename: <span class="token string">'[name].js'</span>,
+          publicPath:
+             <span class="token string">'./'</span>
+              /*process.env.NODE_ENV <span class="token operator">==</span><span class="token operator">=</span> <span class="token string">'production'</span>
+               ? config.build.assetsPublicPath
+               <span class="token keyword">:</span> config.dev.assetsPublicPath*/
+
+      <span class="token punctuation">}</span>
+
+</code></pre></div><h6 id="在这个状态下npm-run-biuld-打包编译就可以了。如果自己不想来回的切换publicpath值来预览和编译文件，可以在npm-run-dev的情况下，另开一个终端，把publicpath-改为编译状态，这个时候npm-run-build-编译，不会影响之前-npm-run-build-终端的运行状态的。"><a href="#在这个状态下npm-run-biuld-打包编译就可以了。如果自己不想来回的切换publicpath值来预览和编译文件，可以在npm-run-dev的情况下，另开一个终端，把publicpath-改为编译状态，这个时候npm-run-build-编译，不会影响之前-npm-run-build-终端的运行状态的。" aria-hidden="true" class="header-anchor">#</a> 在这个状态下npm run biuld 打包编译就可以了。如果自己不想来回的切换publicPath值来预览和编译文件，可以在npm run dev的情况下，另开一个终端，把publicPath 改为编译状态，这个时候npm run build 编译，不会影响之前 npm run build 终端的运行状态的。</h6> <h4 id="_3-兼容ie9-虽说官方文档说明vue支持ie9，但是需要我们自己再去处理才可以在ie9中打开vue项目"><a href="#_3-兼容ie9-虽说官方文档说明vue支持ie9，但是需要我们自己再去处理才可以在ie9中打开vue项目" aria-hidden="true" class="header-anchor">#</a> 3.兼容IE9,虽说官方文档说明vue支持ie9，但是需要我们自己再去处理才可以在ie9中打开vue项目</h4> <div class="language-bash extra-class"><pre class="language-bash"><code>
+      1.安装npm包
+      <span class="token function">npm</span> <span class="token function">install</span> --save-dev -polyfill
+
+      2.修改webpack.base.conf.js  
+        module.exorts<span class="token operator">=</span><span class="token punctuation">{</span>
+      　　entry: <span class="token punctuation">{</span>
+      　　　　　　   app: <span class="token string">'./src/main.js'</span>
+      　　　　     <span class="token punctuation">}</span>
+      　　改为：　entry: <span class="token punctuation">{</span>
+      　　　　　　<span class="token string">'babel-polyfill'</span><span class="token keyword">:</span> <span class="token string">'babel-polyfill'</span>,
+      　　　　　　app: <span class="token string">'./src/main.js'</span>
+      　　　　    <span class="token punctuation">}</span>
+
+
+</code></pre></div><h6 id="这样编译后的文件就可以在ie9中打开了。但是有时你会发现，还是打不开，在打开控制台的情况下，在刷新就会出现页面了，对于这个问题是ie的控制台脚本保护机制，我们需要重新定义console-log就可以了，在index-html中加上："><a href="#这样编译后的文件就可以在ie9中打开了。但是有时你会发现，还是打不开，在打开控制台的情况下，在刷新就会出现页面了，对于这个问题是ie的控制台脚本保护机制，我们需要重新定义console-log就可以了，在index-html中加上：" aria-hidden="true" class="header-anchor">#</a> 这样编译后的文件就可以在IE9中打开了。但是有时你会发现，还是打不开，在打开控制台的情况下，在刷新就会出现页面了，对于这个问题是ie的控制台脚本保护机制，我们需要重新定义console.log就可以了，在index.html中加上：</h6> <div class="language-bash extra-class"><pre class="language-bash"><code>
+    if<span class="token punctuation">(</span><span class="token operator">!</span>window.console<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      window.console<span class="token operator">=</span><span class="token punctuation">{</span>
+        log:function<span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>,
+        err:function<span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>    
+
+</code></pre></div><h6 id="想要在360中默认用极速内核打开网站可以在index-html中添加meta表签："><a href="#想要在360中默认用极速内核打开网站可以在index-html中添加meta表签：" aria-hidden="true" class="header-anchor">#</a> 想要在360中默认用极速内核打开网站可以在index.html中添加meta表签：</h6> <div class="language-bash extra-class"><pre class="language-bash"><code>  <span class="token operator">&lt;</span>meta name<span class="token operator">=</span><span class="token string">&quot;renderer&quot;</span> content<span class="token operator">=</span><span class="token string">&quot;webkit&quot;</span><span class="token operator">&gt;</span>
+
+</code></pre></div><h4 id="_4-vue集成jquery-zepeto-bootstrap等"><a href="#_4-vue集成jquery-zepeto-bootstrap等" aria-hidden="true" class="header-anchor">#</a> 4.vue集成jquery zepeto bootstrap等</h4> <h6 id="对于juery的引入有另种方法"><a href="#对于juery的引入有另种方法" aria-hidden="true" class="header-anchor">#</a> 对于juery的引入有另种方法</h6> <div class="language-bash extra-class"><pre class="language-bash"><code>
+      一 .直接在main.js引入jquery.js文件
+
+      二， webpack引入
+      1.修改build文件夹下面的webpack.base.conf.js文件
+        在头部加入：
+          var webpack <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">'webpack'</span><span class="token punctuation">)</span>
+        然后在
+        module.exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+        entry: <span class="token punctuation">{</span>
+          app: <span class="token string">'./src/main.js'</span>
+        <span class="token punctuation">}</span>,
+        后面加
+        plugins: <span class="token punctuation">[</span>
+          new webpack.ProvidePlugin<span class="token punctuation">(</span><span class="token punctuation">{</span>
+            $: <span class="token string">&quot;jquery&quot;</span>,
+            jQuery: <span class="token string">&quot;jquery&quot;</span>,
+            <span class="token string">&quot;windows.jQuery&quot;</span><span class="token keyword">:</span> <span class="token string">&quot;jquery&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">]</span>
+      2. 在入口文件main.js中加入 <span class="token function">import</span> $ from <span class="token string">'jquery'</span>
+
+</code></pre></div><h6 id="引入bootstrap"><a href="#引入bootstrap" aria-hidden="true" class="header-anchor">#</a> 引入bootstrap</h6> <div class="language-bash extra-class"><pre class="language-bash"><code>
+    1、修改webpack.base.conf.js文件：
+       alias: <span class="token punctuation">{</span>  
+             <span class="token string">'vue$'</span><span class="token keyword">:</span> <span class="token string">'vue/dist/vue.esm.js'</span>,  
+             <span class="token string">'@'</span><span class="token keyword">:</span> resolve<span class="token punctuation">(</span><span class="token string">'src'</span><span class="token punctuation">)</span>,  
+             <span class="token string">'assets'</span><span class="token keyword">:</span> path.resolve<span class="token punctuation">(</span>__dirname, <span class="token string">'../src/assets'</span><span class="token punctuation">)</span>,  
+             <span class="token string">'jquery'</span><span class="token keyword">:</span> <span class="token string">&quot;jquery/src/jquery&quot;</span>  
+       <span class="token punctuation">}</span>  
+    2、在入口文件main.js中加入：
+
+       <span class="token function">import</span> <span class="token string">'./assets/css/bootstrap.min.css'</span>  
+       <span class="token function">import</span> <span class="token string">'./assets/js/bootstrap.min'</span>  
+
+    3、在assets文件目录中拷贝bootstrap各种文件
+    cs  js font文件s等
+
+</code></pre></div><h4 id="_5-在引入组件的时候，如果组件中有数据的功能，在刷行的时候不会执行，故在传入组件前，就需要把待处理的数据处理好。"><a href="#_5-在引入组件的时候，如果组件中有数据的功能，在刷行的时候不会执行，故在传入组件前，就需要把待处理的数据处理好。" aria-hidden="true" class="header-anchor">#</a> 5. 在引入组件的时候，如果组件中有数据的功能，在刷行的时候不会执行，故在传入组件前，就需要把待处理的数据处理好。</h4></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/web/vue/vue生命周期.html" class="prev">
+          vue生命周期
+        </a></span> <span class="next"><a href="/web/vue/vue-npm-framework.html">
+          vue-cli脚手架模版
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/16.a658249d.js" defer></script><script src="/assets/js/app.0af71052.js" defer></script>
+  </body>
+</html>

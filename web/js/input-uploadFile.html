@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>input-uploadFile | 大漠游侠</title>
+    <meta name="description" content="人这一生，是忙着生，还是忙着死">
+    <link rel="icon" href="/panda.ico">
+  <script src="/js/L2Dwidget.min.js"></script>
+  <script src="/js/index.min.js"></script>
+    
+    <link rel="preload" href="/assets/css/styles.0af71052.css" as="style"><link rel="preload" href="/assets/js/app.0af71052.js" as="script"><link rel="preload" href="/assets/js/13.cdafca85.js" as="script"><link rel="prefetch" href="/assets/css/1.styles.a8958bf5.css"><link rel="prefetch" href="/assets/css/6.styles.fb2aed5e.css"><link rel="prefetch" href="/assets/js/1.a8958bf5.js"><link rel="prefetch" href="/assets/js/10.3605eb1f.js"><link rel="prefetch" href="/assets/js/11.023f4da4.js"><link rel="prefetch" href="/assets/js/12.b9bbd9f0.js"><link rel="prefetch" href="/assets/js/14.c88d32bd.js"><link rel="prefetch" href="/assets/js/15.a7a58b0d.js"><link rel="prefetch" href="/assets/js/16.a658249d.js"><link rel="prefetch" href="/assets/js/17.876c670b.js"><link rel="prefetch" href="/assets/js/18.95741b36.js"><link rel="prefetch" href="/assets/js/19.d6e444be.js"><link rel="prefetch" href="/assets/js/2.c1d759e5.js"><link rel="prefetch" href="/assets/js/3.329b0bc7.js"><link rel="prefetch" href="/assets/js/4.d73482b4.js"><link rel="prefetch" href="/assets/js/5.978ccc24.js"><link rel="prefetch" href="/assets/js/6.fb2aed5e.js"><link rel="prefetch" href="/assets/js/7.fab73517.js"><link rel="prefetch" href="/assets/js/8.ff8758f6.js"><link rel="prefetch" href="/assets/js/9.da67d17d.js">
+    <link rel="stylesheet" href="/assets/css/1.styles.a8958bf5.css"><link rel="stylesheet" href="/assets/css/6.styles.fb2aed5e.css"><link rel="stylesheet" href="/assets/css/styles.0af71052.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">大漠游侠</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active">前端</a></div><div class="nav-item"><a href="/free/" class="nav-link">随笔</a></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active">前端</a></div><div class="nav-item"><a href="/free/" class="nav-link">随笔</a></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>js</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/web/js/canvas.html" class="sidebar-link">canvas案例大全</a></li><li><a href="/web/js/input-uploadFile.html" class="active sidebar-link">原生多文件上传</a></li><li><a href="/web/js/placeholder.html" class="sidebar-link">兼容IE低版本浏览器的placeholder</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>git</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h4 id="input用h5的formdata上传多个文件"><a href="#input用h5的formdata上传多个文件" aria-hidden="true" class="header-anchor">#</a> input用H5的formData上传多个文件</h4> <h5 id="xmlhttprequest-level-2添加了一个新的接口formdata-利用formdata对象-我们可以通过javascript用一些键值对来模拟一系列表单控件-我们还可以使用xmlhttprequest的send-方法来异步的提交这个-表单-比起普通的ajax-使用formdata的最大优点就是我们可以异步上传多个二进制文件"><a href="#xmlhttprequest-level-2添加了一个新的接口formdata-利用formdata对象-我们可以通过javascript用一些键值对来模拟一系列表单控件-我们还可以使用xmlhttprequest的send-方法来异步的提交这个-表单-比起普通的ajax-使用formdata的最大优点就是我们可以异步上传多个二进制文件" aria-hidden="true" class="header-anchor">#</a> XMLHttpRequest Level 2添加了一个新的接口FormData.利用FormData对象,我们可以通过JavaScript用一些键值对来模拟一系列表单控件,我们还可以使用XMLHttpRequest的send()方法来异步的提交这个&quot;表单&quot;.比起普通的ajax,使用FormData的最大优点就是我们可以异步上传多个二进制文件.</h5> <div class="language-bash extra-class"><pre class="language-bash"><code>    html代码如下：
+
+    <span class="token operator">&lt;</span>label class<span class="token operator">=</span><span class="token string">&quot;label&quot;</span> for<span class="token operator">=</span><span class="token string">&quot;uploadFujian&quot;</span><span class="token operator">&gt;</span>
+      上传附件
+      <span class="token operator">&lt;</span>form style<span class="token operator">=</span><span class="token string">&quot;display:none;&quot;</span>  class<span class="token operator">=</span><span class="token string">&quot;file&quot;</span> enctype<span class="token operator">=</span><span class="token string">&quot;multipart/form-data&quot;</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;file&quot;</span> multiple<span class="token operator">=</span><span class="token string">&quot;multiple&quot;</span> accept<span class="token operator">=</span><span class="token string">&quot;*&quot;</span>  name<span class="token operator">=</span><span class="token string">&quot;vuefile&quot;</span> id<span class="token operator">=</span><span class="token string">&quot;uploadFujian&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>/form<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>/label<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>progress class<span class="token operator">=</span><span class="token string">&quot;progress&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>/progress<span class="token operator">&gt;</span>
+    js代码：
+
+      <span class="token variable"><span class="token variable">$(</span><span class="token string">&quot;#uploadFujian&quot;</span><span class="token variable">)</span></span>.change<span class="token punctuation">(</span>function<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        var that<span class="token operator">=</span>this,formData<span class="token operator">=</span>new FormData<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        var files<span class="token operator">=</span> <span class="token variable"><span class="token variable">$(</span>that<span class="token variable">)</span></span>.get<span class="token punctuation">(</span>0<span class="token punctuation">)</span>.files
+        if<span class="token punctuation">(</span>files.length<span class="token operator">&gt;</span>0<span class="token punctuation">)</span><span class="token punctuation">{</span>
+          for<span class="token punctuation">(</span>var i<span class="token operator">=</span>0<span class="token punctuation">;</span>i<span class="token operator">&lt;</span>files.length<span class="token punctuation">;</span>i++<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            formData.append<span class="token punctuation">(</span><span class="token string">&quot;vuefile&quot;</span>+i,files<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        $.ajax<span class="token punctuation">(</span><span class="token punctuation">{</span>
+          type:<span class="token string">'POST'</span>,
+          url:<span class="token string">&quot;上传的地址&quot;</span>,
+          xhr:function<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            var myXhr<span class="token operator">=</span> $.ajaxSettings.xhr<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            if<span class="token punctuation">(</span>myXhr.upload<span class="token punctuation">)</span><span class="token punctuation">{</span>
+              myXhr.upload.addEventListener<span class="token punctuation">(</span><span class="token string">'progress'</span>,_this.progressHandle,false<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> myXhr<span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>,
+          data:formData,
+          cache:false,
+          contentType:false,
+          processData:false,
+          success:function<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            //你的代码
+          <span class="token punctuation">}</span>,
+          error:function<span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            //错误处理
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        progressHandle<span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">{</span>
+          if<span class="token punctuation">(</span>e.lengthComputable<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token variable"><span class="token variable">$(</span><span class="token string">&quot;.progress&quot;</span><span class="token variable">)</span></span>.attr<span class="token punctuation">(</span><span class="token punctuation">{</span>value:e.loaded,max:e.total<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>,
+</code></pre></div><h6 id="其中progresshandle函数是配合显示上传进度用的"><a href="#其中progresshandle函数是配合显示上传进度用的" aria-hidden="true" class="header-anchor">#</a> 其中progressHandle函数是配合显示上传进度用的</h6></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/web/js/canvas.html" class="prev">
+          canvas案例大全
+        </a></span> <span class="next"><a href="/web/js/placeholder.html">
+          兼容IE低版本浏览器的placeholder
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/13.cdafca85.js" defer></script><script src="/assets/js/app.0af71052.js" defer></script>
+  </body>
+</html>

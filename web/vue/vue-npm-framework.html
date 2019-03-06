@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>一个简单的脚手架drop-cli,vue的组件库模版，移动端架构和pc管理后台模版 | 大漠游侠</title>
+    <meta name="description" content="人这一生，是忙着生，还是忙着死">
+    <link rel="icon" href="/panda.ico">
+  <script src="/js/L2Dwidget.min.js"></script>
+  <script src="/js/index.min.js"></script>
+    
+    <link rel="preload" href="/assets/css/styles.0af71052.css" as="style"><link rel="preload" href="/assets/js/app.0af71052.js" as="script"><link rel="preload" href="/assets/js/15.a7a58b0d.js" as="script"><link rel="prefetch" href="/assets/css/1.styles.a8958bf5.css"><link rel="prefetch" href="/assets/css/6.styles.fb2aed5e.css"><link rel="prefetch" href="/assets/js/1.a8958bf5.js"><link rel="prefetch" href="/assets/js/10.3605eb1f.js"><link rel="prefetch" href="/assets/js/11.023f4da4.js"><link rel="prefetch" href="/assets/js/12.b9bbd9f0.js"><link rel="prefetch" href="/assets/js/13.cdafca85.js"><link rel="prefetch" href="/assets/js/14.c88d32bd.js"><link rel="prefetch" href="/assets/js/16.a658249d.js"><link rel="prefetch" href="/assets/js/17.876c670b.js"><link rel="prefetch" href="/assets/js/18.95741b36.js"><link rel="prefetch" href="/assets/js/19.d6e444be.js"><link rel="prefetch" href="/assets/js/2.c1d759e5.js"><link rel="prefetch" href="/assets/js/3.329b0bc7.js"><link rel="prefetch" href="/assets/js/4.d73482b4.js"><link rel="prefetch" href="/assets/js/5.978ccc24.js"><link rel="prefetch" href="/assets/js/6.fb2aed5e.js"><link rel="prefetch" href="/assets/js/7.fab73517.js"><link rel="prefetch" href="/assets/js/8.ff8758f6.js"><link rel="prefetch" href="/assets/js/9.da67d17d.js">
+    <link rel="stylesheet" href="/assets/css/1.styles.a8958bf5.css"><link rel="stylesheet" href="/assets/css/6.styles.fb2aed5e.css"><link rel="stylesheet" href="/assets/css/styles.0af71052.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">大漠游侠</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active">前端</a></div><div class="nav-item"><a href="/free/" class="nav-link">随笔</a></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active">前端</a></div><div class="nav-item"><a href="/free/" class="nav-link">随笔</a></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>Vue</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/web/vue/vue生命周期.html" class="sidebar-link">vue生命周期</a></li><li><a href="/web/vue/vue.html" class="sidebar-link">初识vue</a></li><li><a href="/web/vue/vue-npm-framework.html" class="active sidebar-link">vue-cli脚手架模版</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/vue/vue-npm-framework.html#安装使用" class="sidebar-link">安装使用</a></li><li class="sidebar-sub-header"><a href="/web/vue/vue-npm-framework.html#也可利用drop-cli脚手架安装模版" class="sidebar-link">也可利用drop-cli脚手架安装模版</a></li><li class="sidebar-sub-header"><a href="/web/vue/vue-npm-framework.html#_1-element-ui" class="sidebar-link">1.element-ui</a></li><li class="sidebar-sub-header"><a href="/web/vue/vue-npm-framework.html#_2-字体图标用的是vue-svgicon" class="sidebar-link">2.字体图标用的是vue-svgicon ,</a></li><li class="sidebar-sub-header"><a href="/web/vue/vue-npm-framework.html#_3-页面title使用的是vue-meta" class="sidebar-link">3.页面title使用的是vue-meta</a></li><li class="sidebar-sub-header"><a href="/web/vue/vue-npm-framework.html#_4-代码风格-vue-property-decorator" class="sidebar-link">4. 代码风格 vue-property-decorator</a></li><li class="sidebar-sub-header"><a href="/web/vue/vue-npm-framework.html#_5-vuex的分发封装vuex-class" class="sidebar-link">5. vuex的分发封装vuex-class</a></li><li class="sidebar-sub-header"><a href="/web/vue/vue-npm-framework.html#完整引入drop-element" class="sidebar-link">完整引入drop-element</a></li><li class="sidebar-sub-header"><a href="/web/vue/vue-npm-framework.html#通过js引入" class="sidebar-link">通过js引入</a></li><li class="sidebar-sub-header"><a href="/web/vue/vue-npm-framework.html#做为vue组件模版" class="sidebar-link">做为vue组件模版</a></li><li class="sidebar-sub-header"><a href="/web/vue/vue-npm-framework.html#也可利用drop-cli脚手架安装模版-2" class="sidebar-link">也可利用drop-cli脚手架安装模版</a></li></ul></li><li><a href="/web/vue/vue_pc_template.html" class="sidebar-link">基于vue的pc管理后台架构</a></li><li><a href="/web/vue/vue_app_template.html" class="sidebar-link">基于vue的移动端架构</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>js</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>git</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="drop-cli"><a href="#drop-cli" aria-hidden="true" class="header-anchor">#</a> drop-cli</h1> <blockquote><p>一个简单的脚手架,可添加不同的模版/框架</p></blockquote> <h4 id="_1-安装并查看drop-cli的模版"><a href="#_1-安装并查看drop-cli的模版" aria-hidden="true" class="header-anchor">#</a> 1. 安装并查看<a href="https://github.com/raintao/drop-cli.git" target="_blank" rel="noopener noreferrer">drop-cli<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>的模版</h4> <div class="language- extra-class"><pre class="language-text"><code>$ npm install drop-cli -g
+$ drop-cli list
+
+</code></pre></div><h4 id="_2-选择模板并创建自己的项目"><a href="#_2-选择模板并创建自己的项目" aria-hidden="true" class="header-anchor">#</a> 2. 选择模板并创建自己的项目</h4> <div class="language- extra-class"><pre class="language-text"><code>$ drop-cli init
+$ gulp-html-front // 输入一个模版
+$ gulp-html-test  // 输入自己的项目名称
+$ cd gulp-html-test
+$ npm install
+
+</code></pre></div><h4 id="_3-模版链接"><a href="#_3-模版链接" aria-hidden="true" class="header-anchor">#</a> 3. 模版链接</h4> <h5 id="vue-pc-admin-front-基于vue全家桶的一个pc端后台管理系统"><a href="#vue-pc-admin-front-基于vue全家桶的一个pc端后台管理系统" aria-hidden="true" class="header-anchor">#</a> <a href="https://github.com/raintao/vue-pc-admin-front" target="_blank" rel="noopener noreferrer">vue-pc-admin-front<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> : 基于vue全家桶的一个pc端后台管理系统</h5> <h5 id="vue-mobile-front-基于vue全家桶的一个移动端架构模版"><a href="#vue-mobile-front-基于vue全家桶的一个移动端架构模版" aria-hidden="true" class="header-anchor">#</a> <a href="https://github.com/raintao/vue-mobile-front" target="_blank" rel="noopener noreferrer">vue-mobile-front<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> : 基于vue全家桶的一个移动端架构模版</h5> <h5 id="drop-element-制作vue组件库的npm模版"><a href="#drop-element-制作vue组件库的npm模版" aria-hidden="true" class="header-anchor">#</a> <a href="https://github.com/raintao/drop-element" target="_blank" rel="noopener noreferrer">drop-element<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> : 制作vue组件库的npm模版</h5> <h5 id="gulp-html-front-基于gulp的多页应用模版，less-es6"><a href="#gulp-html-front-基于gulp的多页应用模版，less-es6" aria-hidden="true" class="header-anchor">#</a> <a href="https://github.com/raintao/gulp-html-front" target="_blank" rel="noopener noreferrer">gulp-html-front<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> : 基于gulp的多页应用模版，less,es6</h5> <h1 id="vue-pc-admin-front"><a href="#vue-pc-admin-front" aria-hidden="true" class="header-anchor">#</a> <a href="https://github.com/raintao/vue-pc-admin-front" target="_blank" rel="noopener noreferrer">vue-pc-admin-front<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h1> <blockquote><p>PC后台管理Vue架构(vue+ vue-router + store+ axios + scss + svg + element-ui)</p></blockquote> <h2 id="安装使用"><a href="#安装使用" aria-hidden="true" class="header-anchor">#</a> 安装使用</h2> <div class="language- extra-class"><pre class="language-text"><code>    $ git clone https://github.com/raintao/vue-pc-admin-front.git
+    $ cd vue-pc-admin-front
+    $ npm install
+    $ npm start
+</code></pre></div><h2 id="也可利用drop-cli脚手架安装模版"><a href="#也可利用drop-cli脚手架安装模版" aria-hidden="true" class="header-anchor">#</a> 也可利用<a href="https://github.com/raintao/drop-cli.git" target="_blank" rel="noopener noreferrer">drop-cli<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>脚手架安装模版</h2> <h4 id="_1、-安装drop-cli"><a href="#_1、-安装drop-cli" aria-hidden="true" class="header-anchor">#</a> 1、 安装drop-cli</h4> <div class="language- extra-class"><pre class="language-text"><code>$ npm install drop-cli -g
+$ drop-cli list
+
+</code></pre></div><h4 id="_2、选择模板并创建自己的项目"><a href="#_2、选择模板并创建自己的项目" aria-hidden="true" class="header-anchor">#</a> 2、选择模板并创建自己的项目</h4> <div class="language- extra-class"><pre class="language-text"><code>$ drop-cli init
+$ gulp-html-front // 输入一个模版
+$ gulp-html-test  // 输入自己的项目名称
+$ cd gulp-html-test
+$ npm install
+
+</code></pre></div><blockquote><p>因为npm安装插件是从国外服务器下载，受网络影响大，可能出现异常,一般我们常用<a href="http://npm.taobao.org" target="_blank" rel="noopener noreferrer">cnpm<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>来代替</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>    npm install cnpm -g --registry=https://registry.npm.taobao.org
+</code></pre></div><blockquote><p>这里推荐使用<a href="https://yarn.bootcss.com/" target="_blank" rel="noopener noreferrer">yarn<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>, yarn就是一个类似于npm的包管理工具，它是由facebook推出并开源。鉴于facebook在前端界的影响力，yarn一面世就很受瞩目，受到了前端界的广泛欢迎。与npm相比，yarn有着众多的优势，主要的优势在于：速度快，离线模式，版本控制。<a href="https://yarn.bootcss.com/" target="_blank" rel="noopener noreferrer">详情点这里<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <h1 id="vue-pc-admin-front模板简单介绍"><a href="#vue-pc-admin-front模板简单介绍" aria-hidden="true" class="header-anchor">#</a> <a href="https://github.com/raintao/vue-pc-admin-front" target="_blank" rel="noopener noreferrer">vue-pc-admin-front<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>模板简单介绍</h1> <h2 id="_1-element-ui"><a href="#_1-element-ui" aria-hidden="true" class="header-anchor">#</a> 1.element-ui</h2> <p>由饿了么前端团队推出的 element-ui 是一个基于 Vue.js 的pc端组件库。已发布了 2.4.6 版本，支持了vue2。引入方式为:</p> <div class="language- extra-class"><pre class="language-text"><code>
+    // ui框架  
+    import Vue from 'vue';
+    import ElementUI from 'element-ui';
+    import 'element-ui/lib/theme-chalk/index.css';
+    import App from './App.vue';
+
+    Vue.use(ElementUI);
+
+    new Vue({
+    el: '#app',
+    render: h =&gt; h(App)
+    });
+
+</code></pre></div><p>当然也可按需引入，来减少项目的大小。具体怎么用请参考官网：<a href="http://element-cn.eleme.io/#/zh-CN/component/quickstart" target="_blank" rel="noopener noreferrer">Element-ui官网手册<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_2-字体图标用的是vue-svgicon"><a href="#_2-字体图标用的是vue-svgicon" aria-hidden="true" class="header-anchor">#</a> 2.字体图标用的是vue-svgicon ,</h2> <p>可以在<a href="http://www.iconfont.cn/" target="_blank" rel="noopener noreferrer">阿里巴巴矢量图标库<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>上下载项目需要的svg图标。放在目录src/assets/svg下，然后yarn svg就可以生成对应的js文件</p> <div class="language- extra-class"><pre class="language-text"><code>    1、 在main.js中引用
+    // in main.js first line 兼容ie
+    import 'vue-svgicon/dist/polyfill'
+    // import all icons
+    import * as svgicon from 'vue-svgicon'
+    import './views/icons'
+    Vue.use(svgicon, {
+    tagName: 'icon'
+    })
+
+    2、 在html中的使用方法
+     &lt;icon name=&quot;right&quot; width=&quot;18&quot; height=&quot;16&quot; color=&quot;#D0D0D0&quot;&gt;&lt;/icon&gt;
+     &lt;icon icon=&quot;right&quot; width=&quot;18&quot; height=&quot;16&quot; color=&quot;#D0D0D0&quot;&gt;&lt;/icon&gt;
+
+</code></pre></div><p><a href="https://github.com/MMF-FE/vue-svgicon" target="_blank" rel="noopener noreferrer">vue-svgicon<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>的命令配置使用方法请参照<a href="https://github.com/MMF-FE/vue-svgicon" target="_blank" rel="noopener noreferrer">vue-svgicon的github地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_3-页面title使用的是vue-meta"><a href="#_3-页面title使用的是vue-meta" aria-hidden="true" class="header-anchor">#</a> 3.页面title使用的是<a href="https://github.com/declandewet/vue-meta" target="_blank" rel="noopener noreferrer">vue-meta<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h2> <p>1、在main.js引入</p> <div class="language- extra-class"><pre class="language-text"><code>
+import Meta from 'vue-meta'
+
+Vue.use(Meta, {
+  keyName: 'metaInfo'
+})
+
+</code></pre></div><p>2、 在js中使用 和data created methods并列</p> <div class="language- extra-class"><pre class="language-text"><code>
+metaInfo: {
+    title: '实例使用meta'
+}
+
+</code></pre></div><p>3、 更多用法参考<a href="https://github.com/declandewet/vue-meta" target="_blank" rel="noopener noreferrer">项目地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_4-代码风格-vue-property-decorator"><a href="#_4-代码风格-vue-property-decorator" aria-hidden="true" class="header-anchor">#</a> 4. 代码风格 <a href="https://github.com/kaorun343/vue-property-decorator" target="_blank" rel="noopener noreferrer">vue-property-decorator<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h2> <div class="language- extra-class"><pre class="language-text"><code>
+import { Vue, Component, Prop } from 'vue-property-decorator'
+
+@Component
+export default class YourComponent extends Vue {
+  @Prop(Number) propA!: number
+  @Prop({ default: 'default value' }) propB!: string
+  @Prop([String, Boolean]) propC: string | boolean
+}
+
+</code></pre></div><p>is equivalent to</p> <div class="language- extra-class"><pre class="language-text"><code>
+export default {
+  props: {
+    propA: {
+      type: Number
+    },
+    propB: {
+      default: 'default value'
+    },
+    propC: {
+      type: [String, Boolean]
+    },
+  }
+}
+
+</code></pre></div><p>具体使用方法请参考<a href="https://github.com/kaorun343/vue-property-decorator" target="_blank" rel="noopener noreferrer">github<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 或者文件夹src/views/page下的demo页面</p> <h2 id="_5-vuex的分发封装vuex-class"><a href="#_5-vuex的分发封装vuex-class" aria-hidden="true" class="header-anchor">#</a> 5. vuex的分发封装<a href="https://github.com/ktsn/vuex-class" target="_blank" rel="noopener noreferrer">vuex-class<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h2> <div class="language- extra-class"><pre class="language-text"><code>
+import Vue from 'vue'
+import Component from 'vue-class-component'
+import {
+  State,
+  Getter,
+  Action,
+  Mutation,
+  namespace
+} from 'vuex-class'
+
+const someModule = namespace('path/to/module')
+
+@Component
+export class MyComp extends Vue {
+  @State('foo') stateFoo
+  @State(state =&gt; state.bar) stateBar
+  @Getter('foo') getterFoo
+  @Action('foo') actionFoo
+  @Mutation('foo') mutationFoo
+  @someModule.Getter('foo') moduleGetterFoo
+
+  // If the argument is omitted, use the property name
+  // for each state/getter/action/mutation type
+  @State foo
+  @Getter bar
+  @Action baz
+  @Mutation qux
+
+  created () {
+    this.stateFoo // -&gt; store.state.foo
+    this.stateBar // -&gt; store.state.bar
+    this.getterFoo // -&gt; store.getters.foo
+    this.actionFoo({ value: true }) // -&gt; store.dispatch('foo', { value: true })
+    this.mutationFoo({ value: true }) // -&gt; store.commit('foo', { value: true })
+    this.moduleGetterFoo // -&gt; store.getters['path/to/module/foo']
+  }
+}
+
+</code></pre></div><p>具体使用方法请参考<a href="https://github.com/ktsn/vuex-class" target="_blank" rel="noopener noreferrer">github<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 或者文件夹src/views/page下的demo页面</p> <h1 id="drop-element"><a href="#drop-element" aria-hidden="true" class="header-anchor">#</a> <a href="https://github.com/raintao/drop-element" target="_blank" rel="noopener noreferrer">drop-element<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h1> <blockquote><p>vue组件库（可作为一个快速开发vue组件并发布到npm的模版)</p></blockquote> <h2 id="完整引入drop-element"><a href="#完整引入drop-element" aria-hidden="true" class="header-anchor">#</a> 完整引入drop-element</h2> <div class="language- extra-class"><pre class="language-text"><code>    import Vue from 'vue';
+    import DropElement from 'drop-element';
+    import App from './App.vue';
+
+    Vue.use(DropElement);
+
+    new Vue({
+    el: '#app',
+    render: h =&gt; h(App)
+    });
+
+</code></pre></div><h2 id="通过js引入"><a href="#通过js引入" aria-hidden="true" class="header-anchor">#</a> 通过js引入</h2> <div class="language- extra-class"><pre class="language-text"><code>    // 完整demo在lib/demo.html
+    &lt;script src=&quot;./drop-element.js&quot;&gt;&lt;/script&gt;
+
+</code></pre></div><h2 id="做为vue组件模版"><a href="#做为vue组件模版" aria-hidden="true" class="header-anchor">#</a> 做为vue组件模版</h2> <div class="language- extra-class"><pre class="language-text"><code>
+    $ git clone https://github.com/raintao/drop-element.git
+    $ cd drop-element
+    $ npm install
+    $ npm start
+
+</code></pre></div><h2 id="也可利用drop-cli脚手架安装模版-2"><a href="#也可利用drop-cli脚手架安装模版-2" aria-hidden="true" class="header-anchor">#</a> 也可利用<a href="https://github.com/raintao/drop-cli.git" target="_blank" rel="noopener noreferrer">drop-cli<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>脚手架安装模版</h2> <h4 id="_1-安装drop-cli"><a href="#_1-安装drop-cli" aria-hidden="true" class="header-anchor">#</a> 1. 安装drop-cli</h4> <div class="language- extra-class"><pre class="language-text"><code>$ npm install drop-cli -g
+$ drop-cli list
+
+</code></pre></div><h4 id="_2-选择模板并创建自己的项目-2"><a href="#_2-选择模板并创建自己的项目-2" aria-hidden="true" class="header-anchor">#</a> 2.选择模板并创建自己的项目</h4> <div class="language- extra-class"><pre class="language-text"><code>$ drop-cli init
+$ gulp-html-front // 输入一个模版
+$ gulp-html-test  // 输入自己的项目名称
+$ cd gulp-html-test
+$ npm install
+
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/web/vue/vue.html" class="prev">
+          初识vue
+        </a></span> <span class="next"><a href="/web/vue/vue_pc_template.html">
+          基于vue的pc管理后台架构
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/15.a7a58b0d.js" defer></script><script src="/assets/js/app.0af71052.js" defer></script>
+  </body>
+</html>
